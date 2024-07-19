@@ -48,10 +48,6 @@ h1 {
 }
 
 .weather-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   margin-block: 4rem;
 }
 
@@ -110,7 +106,7 @@ h1 {
 }
 
 .user-info-container {
-  /* display: none; */
+  display: none;
 }
 
 .user-info-container.active {
@@ -150,8 +146,8 @@ h1 {
 }
 
 .parameter-container {
-  /* width: 500px; */
-  /* height: 400px; */
+  width: 90%;
+  max-width: 550px;
   display: flex;
   gap: 10px 20px;
   justify-content: center;
@@ -193,8 +189,7 @@ h1 {
 }
 
 .form-container {
-  /* display: none; */
-  /* display: flex; */
+  display: none;
   width: 90%;
   max-width: 550px;
   margin: 0 auto;
@@ -209,7 +204,7 @@ h1 {
 
 .form-container input {
   all: unset;
-  width: calc(100% -80px);
+  width: calc(100% - 80px);
   height: 40px;
   padding: 0 20px;
   background-color: rgba(219, 226, 239, 0.5);
@@ -225,10 +220,12 @@ h1 {
 }
 
 .form-container .btn {
+  padding: unset;
   width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 100%;
+  border-radius: 50%;
+  margin-bottom: 1px;
 }
